@@ -8,5 +8,6 @@ public class Hello_World {
       "know how trivial the problem is.");
     System.out.println("It's trivial. Even a child should know the answer to that one. " + 
       "You disgrace your entired extended family with your galactic stupidity.");
+    System.out.println("Hello! I am a crazy cat lover");
   }
 }
