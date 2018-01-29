@@ -35,5 +35,8 @@ int main() {
   for (map<unsigned, unsigned>::const_iterator it = unsigned_fre_map_1.begin(); it != unsigned_fre_map_1.end(); ++it) {
     cout << setw(5) << it->first << " - " << setw(5) << it->second << endl;
   }
+
+  cout << "You never know what people may do behind the closed door of their hotel room." << endl;
+  cout << "Hackers have a mind that is optimized for discovery. They have a mind optimized for figuring out what's possible." << endl;
   return 1;
 }
