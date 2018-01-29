@@ -1,0 +1,75 @@
+import java.lang.*;
+import java.util.*;
+
+public class Problem_1_Two_Sum {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    boolean keep_running = true;
+    do {
+      // int L = Integer.parseInt(args[0]);
+      // int min = Integer.parseInt(args[1]);
+      // int max = Integer.parseInt(args[2]);
+      int L = in.nextInt();
+      int min = in.nextInt();
+      int max = in.nextInt();
+      int[] rand_arr = rand_arr_generator(L, min, max);
+      print(rand_arr);
+      System.out.println("Enter a target sum");
+      int target = in.nextInt();
+      int[] soln_1 = solution_1(rand_arr, target);
+      int[] soln_2 = solution_2(rand_arr, target);
+      if (soln_1 != null) {
+        System.out.println(soln_1[0] + " + " + soln_1[1]);
+        System.out.println(rand_arr[soln_2[0]] + " + " + rand_arr[soln_2[1]]);
+      } else {
+        System.out.println("There do not exist 2 numbers in rand_arr that amount to " + target);
+      }
+
+      System.out.println("Type Y/y to continue. Type anything else to quit");
+      char choice = in.next().charAt(0);
+      keep_running = choice == 'Y' || choice == 'y';
+    } while (keep_running);
+
+  }
+
+  public static int[] solution_1(int[] arr, int target) {
+    HashSet<Integer> already_encountered_num = new HashSet<>();
+    for (int n : arr) {
+      if (already_encountered_num.contains(target - n)) {
+        return new int[]{n, target-n};
+      }
+      already_encountered_num.add(n);
+    }
+    return null;
+  }
+
+  public static int[] solution_2(int[] arr, int target) {
+    HashMap<Integer, Integer> already_encountered_num = new HashMap<>();
+    for (int i = 0; i < arr.length; i++) {
+      if (already_encountered_num.containsKey(target - arr[i])) {
+        return new int[]{i, already_encountered_num.get(target-arr[i])};
+      }
+      already_encountered_num.put(arr[i], i);
+    }
+    return null;
+  }
+
+  private static int[] rand_arr_generator(int L, int min, int max) {
+    // Random rand_generator = new Random();
+    int[] rand_arr = new int[L];
+    for (int i = 0; i < L; i++) {
+      rand_arr[i] = (int)(Math.random() * (max - min + 1)) + min;
+    }
+    return rand_arr;
+  }
+
+  private static void print(int[] A) {
+    for (int i = 0; i < A.length; i++) {
+      System.out.printf("%5d", A[i]);
+      if ((i + 1) % 10 == 0) {
+        System.out.println();
+      }
+    }
+    System.out.println();
+  }
+}
