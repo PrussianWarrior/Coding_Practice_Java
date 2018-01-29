@@ -32,3 +32,4 @@ msvc/Release/
 tags
 mkmf.log
 *.class
+*.out
