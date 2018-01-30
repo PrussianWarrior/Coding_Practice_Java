@@ -35,8 +35,11 @@ int main() {
 
   unsigned n;
   map<unsigned, unsigned> unsigned_fre_map_1;
-  while (cin >> n) {
-    unsigned_fre_map_1[n]++;
+  // while (cin >> n) {
+  //   unsigned_fre_map_1[n]++;
+  // }
+  for (const auto &i : vuu_1) {
+    unsigned_fre_map_1[i]++;
   }
 
   cout << unsigned_fre_map_1.size() << endl;
@@ -61,5 +64,11 @@ int main() {
   cout << endl;
 
   cout << "One day I will return to Seattle WA" << endl;
+
+  unsigned sum = 0;
+  for (vector<unsigned>::size_type i = 0; i < vuu_1.size(); ++i) {
+    sum += vuu_1[i];
+  }
+  cout << sum << endl;
   return 1;
 }
