@@ -35,8 +35,11 @@ int main() {
 
   unsigned n;
   map<unsigned, unsigned> unsigned_fre_map_1;
-  while (cin >> n) {
-    unsigned_fre_map_1[n]++;
+  // while (cin >> n) {
+  //   unsigned_fre_map_1[n]++;
+  // }
+  for (const auto &i : vuu_1) {
+    unsigned_fre_map_1[i]++;
   }
 
   cout << unsigned_fre_map_1.size() << endl;
@@ -58,6 +61,16 @@ int main() {
   cout << "Hackers have a mind that is optimized for discovery. They have a mind optimized for figuring out what's possible." << endl;
   cout << "But the point is I get to decide if you are watching Disney or obscene movies tonight.";
   cout << "I love Google, Facebook, Microsoft" << endl;
+  cout << "I aspire to work at Microsoft one day" << endl;
+  cout << "I want to be rich and intelligent" << endl;
   cout << endl;
+
+  cout << "One day I will return to Seattle WA" << endl;
+
+  unsigned sum = 0;
+  for (vector<unsigned>::size_type i = 0; i < vuu_1.size(); ++i) {
+    sum += vuu_1[i];
+  }
+  cout << sum << endl;
   return 1;
 }

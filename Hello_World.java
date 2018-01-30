@@ -9,5 +9,9 @@ public class Hello_World {
     System.out.println("It's trivial. Even a child should know the answer to that one. " + 
       "You disgrace your entired extended family with your galactic stupidity.");
     System.out.println("Hello! I am a crazy cat lover");
+
+    for (int i = 1; i <= 10; i++) {
+      System.out.println(Math.random() * 100 + 5);
+    }
   }
 }
