@@ -56,6 +56,8 @@ int main() {
 
   cout << "You never know what people may do behind the closed door of their hotel room." << endl;
   cout << "Hackers have a mind that is optimized for discovery. They have a mind optimized for figuring out what's possible." << endl;
+  cout << "I aspire to work at Microsoft one day" << endl;
+  cout << "I want to be rich and intelligent" << endl;
   cout << endl;
   return 1;
 }
