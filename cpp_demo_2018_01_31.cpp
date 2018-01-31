@@ -1,14 +1,4 @@
-#include<iostream>
-#include<string>
-#include<vector>
-
-using std::vector;
-using std::string;
-using std::cout;
-using std::cin;
-using std::endl;
-using std::begin;
-using std::end;
+#include "setup_file.h"
 
 int main() {
   cout << sizeof(int) << endl;
