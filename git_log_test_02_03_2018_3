@@ -1,0 +1,312 @@
+commit 3efd471ffb6e06d5f1c6b850b2f6fba65a591294
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Sat Feb 3 09:26:50 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Sat Feb 3 09:26:50 2018 +0700
+
+    add files numbered 51 to 59
+
+commit f5fca282727567a804a47bdca072855dc1a21745
+Merge: 1485d75 b37724a
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Sat Feb 3 09:15:09 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Sat Feb 3 09:15:09 2018 +0700
+
+    Merge branch 'test_02_03_2018_2'
+    Merging branch test_02_03_2018_2
+
+commit 1485d75b732792325172c5521f2146e04139e1e1
+Merge: 6628ddc 09bd982
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Sat Feb 3 09:14:03 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Sat Feb 3 09:14:03 2018 +0700
+
+    Merge branch 'test_02_03_2018_1'
+    testing
+
+commit b37724a7c78789e6bc370cbfbae623ac3d4740bf
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Sat Feb 3 08:26:07 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Sat Feb 3 08:26:07 2018 +0700
+
+    added files test_file numbered from 31 to 35
+
+commit 09bd982710ada20ef327fa4d3d01090c27c1cb5a
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Sat Feb 3 08:24:54 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Sat Feb 3 08:24:54 2018 +0700
+
+    added test_files numbered from 20 to 29
+
+commit 6628ddc753d613f4422a0ec2769350c9b0839273
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Sat Feb 3 07:54:18 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Sat Feb 3 07:54:18 2018 +0700
+
+    added files file_11, file_12, file_13, file_14
+
+commit de6824f705ed89887b691351c8c2999b36ddd78c
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Sat Feb 3 07:53:18 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Sat Feb 3 07:53:18 2018 +0700
+
+    adding file_01, file_02, file_03, file_04, file_05
+
+commit 0fa16685642e562bf8b08b5ac116c517e2c8c924
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Sat Feb 3 00:05:09 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Sat Feb 3 00:05:09 2018 +0700
+
+    Delete all the temporary test files
+
+commit c50113db4a2961af7023d1d31cd57ccb3b2f4b72
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Fri Feb 2 23:49:12 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Fri Feb 2 23:59:07 2018 +0700
+
+    add file test_file_02_02_2018_02
+
+commit ee8acc4187c6c97773c74aa13356b2680e1e7662
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Fri Feb 2 23:48:22 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Fri Feb 2 23:59:07 2018 +0700
+
+    added test_file_02_02_2018_01
+
+commit f036264946e301fca3e7640f960fe304596e7f38
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Fri Feb 2 23:51:19 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Fri Feb 2 23:51:19 2018 +0700
+
+    added test_file_02_02_2018_0{3..5}
+
+commit a9af1d58165ab35abb09b6de20d9d9ef2ab3505b
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Fri Feb 2 23:44:28 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Fri Feb 2 23:44:28 2018 +0700
+
+    added test_file_02_02_2018
+
+commit 59692a23ab237cee027ad39ea9418fab73fd9fa8
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Fri Feb 2 00:15:03 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Fri Feb 2 00:15:03 2018 +0700
+
+    Add Problem_5_strstr.java file
+
+commit 990517b7e9cd1abf164ce0cdf6cd3b06ef0842d7
+Merge: 6c8ce5a 2248881
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Thu Feb 1 22:10:53 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Thu Feb 1 22:10:53 2018 +0700
+
+    Merge branch 'master' of https://github.com/PrussianWarrior/Coding_Practice_Java
+    Git pull executed on 02/01/2018
+
+commit 6c8ce5aa02717757f9d6979bbfa711e9423150a5
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Wed Jan 31 23:28:04 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Wed Jan 31 23:43:54 2018 +0700
+
+    added new set up file setup_file.h and replace all the include statements in cpp_demo_2018_01_31.cpp
+    and added a new file named test_file_2
+
+commit 22488814531f9b04ce0bae2df090524187ff3905
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Wed Jan 31 23:28:04 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Wed Jan 31 23:28:04 2018 +0700
+
+    added new set up file setup_file.h and replace all the include statements in cpp_demo_2018_01_31.cpp
+
+commit 20dae7236b7f2bb70e05e5632289a1a6bced24a8
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Wed Jan 31 23:14:48 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Wed Jan 31 23:14:48 2018 +0700
+
+    added file cpp_demo_2018_01_31.cpp on branch coding_2018_Jan_31_2
+
+commit 45ca0f010eeab495af43a843a051137144bf77f2
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Wed Jan 31 22:54:54 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Wed Jan 31 22:54:54 2018 +0700
+
+    test_file_1
+
+commit 664f061517c9d342ba1157259b453d2c546a61c0
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Wed Jan 31 22:53:57 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Wed Jan 31 22:53:57 2018 +0700
+
+    Committing Problem 4 valid palindrome java
+
+commit 10069607ee96c78f953473af3824bcbd8aa2f885
+Merge: a93b533 28fb0c5
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Tue Jan 30 23:31:17 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Tue Jan 30 23:31:17 2018 +0700
+
+    changes made to cpp_demo.cpp and Hello_World.java
+
+commit 28fb0c55e31faf396c47e7ac01e91a664355df87
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Tue Jan 30 22:52:45 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Tue Jan 30 22:52:45 2018 +0700
+
+    added some lines into cpp_demo.cpp
+
+commit 2ee84e71819b2b59084968ef0e31e0f6e434eaea
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Tue Jan 30 22:46:55 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Tue Jan 30 22:46:55 2018 +0700
+
+    add a few more lines to cpp_demo.cpp
+
+commit 4fd465769640797660cdf2ab1dad8dd31811016a
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Tue Jan 30 22:40:24 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Tue Jan 30 22:40:24 2018 +0700
+
+    add 2 new lines to cpp_demo.cpp on branch testing_1
+
+commit a93b533f1bd2f4f2ee938e9e36dfb9a5b5b55cd6
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Tue Jan 30 22:38:15 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Tue Jan 30 22:38:15 2018 +0700
+
+    added one line new to cpp_demo.cpp
+
+commit 14445e2dc5c9cbb9523a5fc988fdb63556ed9c22
+Merge: 74e7aa7 bed9557
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Tue Jan 30 00:48:24 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Tue Jan 30 00:48:24 2018 +0700
+
+    committed new version of cpp_demo.cpp
+
+commit 74e7aa7dd3ab715c86eaf55f5bd28de9435743e5
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Tue Jan 30 00:46:29 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Tue Jan 30 00:46:29 2018 +0700
+
+    added some quotes by Pablos Hollman into cpp_demo.cpp
+
+commit bed955753cf346db1ba673aac15e347fef175b28
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Tue Jan 30 00:44:14 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Tue Jan 30 00:44:14 2018 +0700
+
+    added more demo lines to cpp_demo.cpp
+
+commit 1cd73856b5c7cde0fe689ee7fa93e5ec6b6aca8f
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Tue Jan 30 00:06:07 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Tue Jan 30 00:06:07 2018 +0700
+
+    changed cpp_demo.cpp. Add filename pattern *.out to .gitignore
+
+commit 4b4ae957414b2899eb91555d651dc4ea8ec703d1
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Mon Jan 29 23:54:58 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Mon Jan 29 23:54:58 2018 +0700
+
+    changed Hello_World.java, add 2 new files cpp_demo.cpp and random_thoughts
+
+commit 6242d19344ed21e72fd7d98e8f01f83b067602d9
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Mon Jan 29 23:32:18 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Mon Jan 29 23:32:18 2018 +0700
+
+    Changed the file Hello_World.java
+
+commit 97595692d24b0d9000aacfe200b7f1e5d216a14a
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Mon Jan 29 23:05:07 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Mon Jan 29 23:05:07 2018 +0700
+
+    Adding Hello_World.java
+
+commit 779a9a80bb47b8a20d31bf30ec29c5b930f064b1
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Mon Jan 29 23:01:30 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Mon Jan 29 23:01:30 2018 +0700
+
+    adding new line at the end of the file .gitignore
+
+commit a0f836fcd72a5dc62e1800fa1ada21375c7b1980
+Author:     HSCTC_29 <prussianvirtues0805@gmail.com>
+AuthorDate: Mon Jan 29 22:55:05 2018 +0700
+Commit:     HSCTC_29 <prussianvirtues0805@gmail.com>
+CommitDate: Mon Jan 29 22:55:05 2018 +0700
+
+    commit on branch testing
+
+commit caf69fcefda2ef1a1046f940711e90853351b926
+Author:     HSCTC_91 <prussianvirtues0805@gmail.com>
+AuthorDate: Sun Jan 28 13:53:06 2018 +0700
+Commit:     HSCTC_91 <prussianvirtues0805@gmail.com>
+CommitDate: Sun Jan 28 13:53:06 2018 +0700
+
+    delete test_file_1_renamed
+
+commit 02ba36a1386119decbb2baa0599fcb6b02bbee5d
+Author:     HSCTC_91 <prussianvirtues0805@gmail.com>
+AuthorDate: Sun Jan 28 13:30:37 2018 +0700
+Commit:     HSCTC_91 <prussianvirtues0805@gmail.com>
+CommitDate: Sun Jan 28 13:30:37 2018 +0700
+
+    Rename test_file_1 to test_file_1_renamed file
+
+commit 6e8c4febf761b6d29da02ff6a5cf6f461f387d13
+Author:     HSCTC_91 <prussianvirtues0805@gmail.com>
+AuthorDate: Sun Jan 28 13:29:16 2018 +0700
+Commit:     HSCTC_91 <prussianvirtues0805@gmail.com>
+CommitDate: Sun Jan 28 13:29:16 2018 +0700
+
+    Modifying the test_file_1 file
+
+commit df0d57506667970efaf5b3f446f3ddd85f469f7d
+Author:     HSCTC_91 <prussianvirtues0805@gmail.com>
+AuthorDate: Sun Jan 28 13:27:31 2018 +0700
+Commit:     HSCTC_91 <prussianvirtues0805@gmail.com>
+CommitDate: Sun Jan 28 13:27:31 2018 +0700
+
+    Adding .gitignore
+
+commit db9877078fad5a51b67b114096991250fee949bd
+Author:     HSCTC_91 <prussianvirtues0805@gmail.com>
+AuthorDate: Sun Jan 28 13:25:26 2018 +0700
+Commit:     HSCTC_91 <prussianvirtues0805@gmail.com>
+CommitDate: Sun Jan 28 13:25:26 2018 +0700
+
+    Setting up Coding Project

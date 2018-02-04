@@ -1,11 +1,49 @@
-#include<iostream>
-#include<string>
-#include<vector>
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <vector>
+#include <list>
+#include <forward_list>
+#include <deque>
+#include <stack>
+#include <queue>
+#include <unordered_set>
+#include <set>
+#include <unordered_map>
+#include <map>
+#include <utility>
+#include <memory>
+#include <cctype>
+#include "sales_data.h"
 
-using std::vector;
+using std::setw;
 using std::string;
-using std::cout;
+using std::vector;
+using std::list;
+using std::forward_list;
+using std::deque;
 using std::cin;
+using std::cout;
 using std::endl;
 using std::begin;
 using std::end;
+using std::to_string;
+using std::stoi;
+using std::stol;
+using std::stoul;
+using std::stoll;
+using std::stoull;
+using std::stod;
+using std::stold;
+using std::stack;
+using std::queue;
+using std::priority_queue;
+using std::unordered_set;
+using std::set;
+using std::unordered_map;
+using std::map;
+using std::pair;
+using std::make_pair;
+using std::shared_ptr;
+using std::unique_ptr;
+
