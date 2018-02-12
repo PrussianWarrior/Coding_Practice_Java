@@ -87,7 +87,7 @@ public class Problem_29_Convert_Sorted_Array_To_Balanced_BST {
     }
     return Math.abs(max_depth_bin_tree_1(root.left) - max_depth_bin_tree_1(root.right)) <= 1 &&
            is_balanced_1(root.left) &&
-           is_balanced_2(root.left);
+           is_balanced_1(root.right);
   }
 
   private static boolean is_balanced_2(TreeNode root) {

@@ -2,22 +2,7 @@ import java.lang.*;
 import java.util.*;
 import java.io.*;
 
-public class Problem_30_Sorted_LL_To_Balanced_BST {
-  private static class Node<T extends Comparable> {
-    T data;
-    Node next;
-    public Node(T data) {
-      this.data = data;
-    }
-  }
-
-  private static class NodeWrapper {
-    Node node;
-    public NodeWrapper(Node node) {
-      this.node = node;
-    }
-  }
-
+public class Problem_32_Binary_Tree_Upside_Down {
   private static class TreeNode<T extends Comparable> {
     T data;
     TreeNode left, right;
@@ -35,8 +20,9 @@ public class Problem_30_Sorted_LL_To_Balanced_BST {
         int counter = 1;
         while (line != null) {
           System.out.printf("CASE %5d: %-1s\n", counter++, line);
-          Node sorted_ll = process_input(line);
-          TreeNode root = convert_sorted_LL_2_balanced_bst_1(sorted_ll);
+          String[] list = process_input(line);
+          TreeNode root = build_bst(list);
+          TreeNode clone_root = clone_tree(root);
           traverse_bst(root);
 
           int min_depth_soln_1 = min_depth_bin_tree_1(root);
@@ -67,6 +53,20 @@ public class Problem_30_Sorted_LL_To_Balanced_BST {
             break;
           }
 
+          TreeNode inverted_tree_root_1 = invert_upside_down_L2R_1(root);
+          TreeNode inverted_tree_root_2 = invert_upside_down_L2R_2(clone_root);
+
+          System.out.println("Inverted binary tree:");
+          System.out.println("Method 1:");
+          traverse_bst(inverted_tree_root_1);
+
+          System.out.println("Method 2:");
+          traverse_bst(inverted_tree_root_2);
+        
+          if (!are_trees_identical(inverted_tree_root_1, inverted_tree_root_2)) {
+            System.out.println("FAILED");
+            break;
+          }
           System.out.println("--------------------------------------------------------------------------------------\n");
           line = br.readLine();
         }
@@ -77,28 +77,71 @@ public class Problem_30_Sorted_LL_To_Balanced_BST {
     }   
   }
 
-  private static TreeNode convert_sorted_LL_2_balanced_bst_1(Node head) {
-    if (head == null) {
-      throw new IllegalArgumentException("ERROR: Input array is null. It cannot be null");
+  private static TreeNode invert_upside_down_L2R_1(TreeNode root) {
+    TreeNode parent = null;
+    TreeNode right = null;
+    TreeNode ptr = root;
+    while (ptr != null) {
+      TreeNode left = ptr.left;
+      ptr.left = right;
+      right = ptr.right;
+      ptr.right = parent;
+      parent = ptr;
+      ptr = left;
     }
-    assert is_list_sorted(head);
-    int len = 0;
-    for (Node ptr = head; ptr != null; ptr = ptr.next) {
-      len++;
-    }
-    return convert_sorted_LL_2_balanced_bst_1(new NodeWrapper(head), 1, len);
+    return parent;
   }
 
-  private static TreeNode convert_sorted_LL_2_balanced_bst_1(NodeWrapper node_wrapper, int start, int end) {
-    if (start > end) {
+  private static TreeNode invert_upside_down_L2R_2(TreeNode root) {
+    return invert_upside_down_L2R_2(root, null);
+  }
+
+  private static TreeNode invert_upside_down_L2R_2(TreeNode node, TreeNode parent) {
+    if (node == null) {
+      return parent;
+    }
+    TreeNode root = invert_upside_down_L2R_2(node.left, node);
+    node.left = parent == null ? parent : parent.right;
+    node.right = parent;
+    return root;
+  }
+
+  private static TreeNode build_bst(String[] input) {
+    if (input == null) {
+      throw new IllegalArgumentException("Input list cannot be null");
+    }
+
+    if (input.length == 0) {
       return null;
     }
-    int mid = start + (end - start)/2;
-    TreeNode left_child = convert_sorted_LL_2_balanced_bst_1(node_wrapper, start, mid - 1);
-    TreeNode root = new TreeNode(node_wrapper.node.data);
-    root.left = left_child;
-    node_wrapper.node = node_wrapper.node.next;
-    root.right = convert_sorted_LL_2_balanced_bst_1(node_wrapper, mid + 1, end);
+
+    TreeNode root = new TreeNode(Integer.parseInt(input[0]));
+    for (int i = 1; i < input.length; i++) {
+      TreeNode prec = null;
+      TreeNode ptr = root;
+      boolean left = false;
+      String data = extract_data(input[i]);
+      String branching_instruction = extract_branching_instruction(input[i]);
+
+      for (char c : branching_instruction.toCharArray()) {
+        prec = ptr;
+        if (c == '0') {
+          ptr = ptr.left;
+          left = true;
+        } else if (c == '1') {
+          ptr = ptr.right;
+          left = false;
+        } else {
+          throw new IllegalArgumentException("The branching instruction code must be either 0 or 1");
+        }
+      }
+
+      if (left) {
+        prec.left = new TreeNode(Integer.parseInt(data));
+      } else {
+        prec.right = new TreeNode(Integer.parseInt(data));
+      }
+    }
     return root;
   }
 
@@ -178,24 +221,12 @@ public class Problem_30_Sorted_LL_To_Balanced_BST {
     return 1 + Math.max(max_depth_bin_tree_1(node.left), max_depth_bin_tree_1(node.right));
   }
 
-  private static Node process_input(String line) {
+  private static String[] process_input(String line) {
     String[] words = line.split(" ");
-    int len = Integer.parseInt(words[0].trim());
-    int min = Integer.parseInt(words[1].trim());
-    int max = Integer.parseInt(words[2].trim());
-    List<Integer> arr = new ArrayList<>();
-    for (int i = 0; i < len; i++) {
-      arr.add((int)(Math.random() * (max - min + 1)) + min);
+    for (int i = 0; i < words.length; i++) {
+      words[i] = words[i].trim();
     }
-    Collections.sort(arr);
-
-    Node dummy_head = new Node(0);
-    Node ptr = dummy_head;
-    for (int n : arr) {
-      ptr.next = new Node(n);
-      ptr = ptr.next;
-    }
-    return dummy_head.next;
+    return words;
   }
 
   private static List<TreeNode> in_order_traverse_1(TreeNode root) {
@@ -425,17 +456,37 @@ public class Problem_30_Sorted_LL_To_Balanced_BST {
     return i_1 == list_1.size() && i_2 == list_2.size();
   }
 
-  private static boolean is_list_sorted(Node head) {
-    Node prec = null;
-    while (head != null) {
-      if (prec != null) {
-        if (prec.data.compareTo(head.data) > 0) {
-          return false;
-        }
-      }
-      prec = head;
-      head = head.next;
+  private static String extract_branching_instruction(String code) {
+    int index_of_opening_parenthese = code.indexOf("(");
+    int index_of_closing_parenthese = code.indexOf(")");
+    return code.substring(index_of_opening_parenthese + 1, index_of_closing_parenthese).trim();
+  }
+
+  private static String extract_data(String code) {
+    int index_of_opening_parenthese = code.indexOf("(");
+    return code.substring(0, index_of_opening_parenthese).trim();
+  }
+
+  private static boolean are_trees_identical(TreeNode root_1, TreeNode root_2) {
+    if ((root_1 != null && root_2 == null) ||
+        (root_1 == null && root_2 != null)) {
+      return false;
     }
-    return true;
+    if (root_1 == null && root_2 == null) {
+      return true;
+    }
+    return root_1.data.compareTo(root_2.data) == 0 &&
+           are_trees_identical(root_1.left, root_2.left) &&
+           are_trees_identical(root_1.right, root_2.right);
+  }
+
+  private static TreeNode clone_tree(TreeNode node) {
+    if (node == null) {
+      return null;
+    }
+    TreeNode root = new TreeNode(node.data);
+    root.left = clone_tree(node.left);
+    root.right = clone_tree(node.right);
+    return root;
   }
 }
