@@ -1,0 +1,5 @@
+Customized: dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext
+Customized: dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext
+Customized: i_love_japan_and_germany.txt\n\tsubdir1\n\tsubdir2\n\t\tfile.ext
+Customized: folder_1\n\tlong_live_beautiful_japan_and_germany.txt\n\tsubdir2\n\t\tfile.ext
+Customized: folder_1\n\tfolder_2\n\tlong_live_beautiful_japan_and_germany.txt\n\tsubdir2\n\t\tfile.ext
