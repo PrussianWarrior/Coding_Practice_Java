@@ -58,11 +58,18 @@ public class Maximum_Size_Subarray_Sum_Equals_k {
           stop = System.currentTimeMillis();
           long execution_time_soln_2 = stop - start;
 
+          start = System.currentTimeMillis();
+          int max_length_3 = find_max_subarray_size_sum_equals_to_k_3(input.list, input.k);
+          stop = System.currentTimeMillis();
+          long execution_time_soln_3 = stop - start;
+
           System.out.println("Max size of subarray with sum = k:");
           System.out.println("Solution 1 = " + max_length_1);
           System.out.println("Solution 2 = " + max_length_2);
+          System.out.println("Solution 3 = " + max_length_3);
 
-          if (max_length_1 != max_length_2) {
+          if (max_length_1 != max_length_2 ||
+              max_length_1 != max_length_3) {
             System.out.println("FAILED");
             break;
           }
@@ -94,7 +101,7 @@ public class Maximum_Size_Subarray_Sum_Equals_k {
   }
 
   private static int find_max_subarray_size_sum_equals_to_k_2(List<Integer> list, int k) {
-    Map<Integer, Integer> cumulative_sum = new HashMap<>();
+    Map<Integer, Integer> prefix_sum_end_index = new HashMap<>();
 
     int max_length = 0;
     int sum = 0;
@@ -106,16 +113,38 @@ public class Maximum_Size_Subarray_Sum_Equals_k {
         max_length = Math.max(max_length, i + 1);
       }
 
-      if (cumulative_sum.containsKey(sum - k)) {
-        max_length = Math.max(max_length, i - cumulative_sum.get(sum - k) + 1);
+      if (prefix_sum_end_index.containsKey(sum - k)) {
+        max_length = Math.max(max_length, i - prefix_sum_end_index.get(sum - k) + 1);
       }
 
-      if (!cumulative_sum.containsKey(sum)) {
-        cumulative_sum.put(sum, i + 1);
+      if (!prefix_sum_end_index.containsKey(sum)) {
+        prefix_sum_end_index.put(sum, i + 1);
       }
     }
 
     return max_length;
+  }
+
+  private static int find_max_subarray_size_sum_equals_to_k_3(List<Integer> list, int k) {
+    Map<Integer, Integer> prefix_sum_end_index = new HashMap<>();
+    prefix_sum_end_index.put(0, 0);
+
+    int max_size = 0;
+    int sum = 0;
+
+    for (int i = 0; i < list.size(); i++) {
+      sum += list.get(i);
+
+      if (prefix_sum_end_index.containsKey(sum - k)) {
+        max_size = Math.max(max_size, i - prefix_sum_end_index.get(sum - k) + 1);
+      }
+
+      if (!prefix_sum_end_index.containsKey(sum)) {
+        prefix_sum_end_index.put(sum, i + 1);
+      }
+    }
+
+    return max_size;
   }
 
   private static List_K get_customized_input(String line) {
