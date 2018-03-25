@@ -1,0 +1,10 @@
+Customized: aa a
+Customized: aa aa
+Customized: aaa aa
+Customized: aa *
+Customized: aa a*
+Customized: ab ?*
+Customized: aab c*a*b*
+Customized: aaaabbbb a*b*
+Customized: aaaabbbbcc a*b****
+Customized: aaaabbbbcc a*b*d***

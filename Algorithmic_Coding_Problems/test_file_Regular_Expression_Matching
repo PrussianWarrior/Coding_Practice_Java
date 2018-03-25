@@ -1,0 +1,7 @@
+Customized: aa a
+Customized: aa aa
+Customized: aaa a
+Customized: aa a*
+Customized: aaa .*
+Customized: aab .*
+Customized: aabb c*a*b*
